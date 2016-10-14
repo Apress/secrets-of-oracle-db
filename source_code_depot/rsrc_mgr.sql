@@ -1,0 +1,11 @@
+begin
+	dbms_resource_manager.create_pending_area();
+	dbms_resource_manager.set_consumer_group_mapping(
+		attribute=>dbms_resource_manager.service_module_action,
+		value=>'TEN.oradbpro.com.mod.act',
+		consumer_group=>'LOW_GROUP'
+	);
+	dbms_resource_manager.submit_pending_area();
+	dbms_resource_manager.clear_pending_area();
+end;
+/

@@ -1,0 +1,16 @@
+taftest.oradbpro.com =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dbserver1)(PORT = 1521))
+      (ADDRESS = (PROTOCOL = TCP)(HOST = dbserver2)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = TEN.oradbpro.com)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+        (RETRIES = 36)
+        (DELAY = 5)
+      )
+    )
+  )

@@ -1,0 +1,6193 @@
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+NAME
+</th>
+<th scope="col">
+VALUE
+</th>
+<th scope="col">
+DESCRIPTION
+</th>
+</tr>
+<tr>
+<td>
+_NUMA_instance_mapping
+</td>
+<td>
+Not specified
+</td>
+<td>
+Set of nodes that this instance should run on
+</td>
+</tr>
+<tr>
+<td>
+_NUMA_pool_size
+</td>
+<td>
+Not specified
+</td>
+<td>
+aggregate size in bytes of NUMA pool
+</td>
+</tr>
+<tr>
+<td>
+_PX_use_large_pool
+</td>
+<td>
+FALSE
+</td>
+<td>
+Use Large Pool as source of PX buffers
+</td>
+</tr>
+<tr>
+<td>
+_abort_recovery_on_join
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, abort recovery on join reconfigurati
+ons
+</td>
+</tr>
+<tr>
+<td>
+_active_standby_fast_reconfiguration
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE optimize dlm reconfiguration for acti
+ve/standby OPS
+</td>
+</tr>
+<tr>
+<td>
+_adaptive_direct_read
+</td>
+<td>
+TRUE
+</td>
+<td>
+Adaptive Direct Read
+</td>
+</tr>
+<tr>
+<td>
+_adaptive_fetch_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable/disable adaptive fetch in parallel gro
+up by
+</td>
+</tr>
+<tr>
+<td>
+_affinity_on
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable/disable affinity at run time
+</td>
+</tr>
+<tr>
+<td>
+_all_shared_dblinks
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+treat all dblinks as shared
+</td>
+</tr>
+<tr>
+<td>
+_allocate_creation_order
+</td>
+<td>
+FALSE
+</td>
+<td>
+should files be examined in creation order du
+ring allocation
+</td>
+</tr>
+<tr>
+<td>
+_allocation_update_interval
+</td>
+<td>
+3
+</td>
+<td>
+interval at which successful search in L1 sho
+uld be updated
+</td>
+</tr>
+<tr>
+<td>
+_allow_error_simulation
+</td>
+<td>
+FALSE
+</td>
+<td>
+Allow error simulation for testing
+</td>
+</tr>
+<tr>
+<td>
+_allow_read_only_corruption
+</td>
+<td>
+FALSE
+</td>
+<td>
+allow read-only open even if database is corr
+upt
+</td>
+</tr>
+<tr>
+<td>
+_allow_resetlogs_corruption
+</td>
+<td>
+FALSE
+</td>
+<td>
+allow resetlogs even if it will cause corrupt
+ion
+</td>
+</tr>
+<tr>
+<td>
+_allow_terminal_recovery_corruption
+</td>
+<td>
+FALSE
+</td>
+<td>
+Finish terminal recovery even if it may cause
+ corruption
+</td>
+</tr>
+<tr>
+<td>
+_always_anti_join
+</td>
+<td>
+CHOOSE
+</td>
+<td>
+always use this method for anti-join when pos
+sible
+</td>
+</tr>
+<tr>
+<td>
+_always_semi_join
+</td>
+<td>
+CHOOSE
+</td>
+<td>
+always use this method for semi-join when pos
+sible
+</td>
+</tr>
+<tr>
+<td>
+_always_star_transformation
+</td>
+<td>
+FALSE
+</td>
+<td>
+always favor use of star transformation
+</td>
+</tr>
+<tr>
+<td>
+_app_ctx_vers
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable app ctx versioning
+</td>
+</tr>
+<tr>
+<td>
+_aq_tm_scanlimit
+</td>
+<td>
+0
+</td>
+<td>
+scan limit for Time Managers to clean up IOT
+</td>
+</tr>
+<tr>
+<td>
+_arch_io_slaves
+</td>
+<td>
+0
+</td>
+<td>
+ARCH I/O slaves
+</td>
+</tr>
+<tr>
+<td>
+_async_recovery_claims
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, issue recovery claims asynchronously
+ (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_async_recovery_reads
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, issue recovery reads asynchronously
+(DFS)
+</td>
+</tr>
+<tr>
+<td>
+_avoid_prepare
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, do not prepare a buffer when the mas
+ter is local (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_b_tree_bitmap_plans
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable the use of bitmap plans for tables w.
+only B-tree indexes
+</td>
+</tr>
+<tr>
+<td>
+_backup_disk_io_slaves
+</td>
+<td>
+0
+</td>
+<td>
+BACKUP Disk I/O slaves
+</td>
+</tr>
+<tr>
+<td>
+_backup_io_pool_size
+</td>
+<td>
+262144
+</td>
+<td>
+memory to reserve from the large pool
+</td>
+</tr>
+<tr>
+<td>
+_bitmap_or_improvement_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+controls extensions to partition pruning for
+general predicates
+</td>
+</tr>
+<tr>
+<td>
+_bump_highwater_mark_count
+</td>
+<td>
+0
+</td>
+<td>
+how many blocks should we allocate per free l
+ist on advancing HW
+</td>
+</tr>
+<tr>
+<td>
+_bwr_for_flushed_pi
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, generate a BWR for a flushed PI (DFS
+)
+</td>
+</tr>
+<tr>
+<td>
+_cgs_send_timeout
+</td>
+<td>
+300
+</td>
+<td>
+CGS send timeout value
+</td>
+</tr>
+<tr>
+<td>
+_check_block_after_checksum
+</td>
+<td>
+TRUE
+</td>
+<td>
+perform block check after checksum if both ar
+e turned on
+</td>
+</tr>
+<tr>
+<td>
+_cleanup_rollback_entries
+</td>
+<td>
+100
+</td>
+<td>
+no. of undo entries to apply per transaction
+cleanup
+</td>
+</tr>
+<tr>
+<td>
+_close_cached_open_cursors
+</td>
+<td>
+FALSE
+</td>
+<td>
+close cursors cached by PL/SQL at each commit
+</td>
+</tr>
+<tr>
+<td>
+_collect_undo_stats
+</td>
+<td>
+TRUE
+</td>
+<td>
+Collect Statistics v$undostat
+</td>
+</tr>
+<tr>
+<td>
+_column_elimination_off
+</td>
+<td>
+FALSE
+</td>
+<td>
+turn off predicate-only column elimination
+</td>
+</tr>
+<tr>
+<td>
+_column_tracking_level
+</td>
+<td>
+1
+</td>
+<td>
+column usage tracking
+</td>
+</tr>
+<tr>
+<td>
+_compatible_no_recovery
+</td>
+<td>
+0.0.0
+</td>
+<td>
+Database will be compatible unless crash or m
+edia recovery is ne
+</td>
+</tr>
+<tr>
+<td>
+_complex_view_merging
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable complex view merging
+</td>
+</tr>
+<tr>
+<td>
+_controlfile_enqueue_timeout
+</td>
+<td>
+900
+</td>
+<td>
+control file enqueue timeout in seconds
+</td>
+</tr>
+<tr>
+<td>
+_corrupted_rollback_segments
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+corrupted undo segment list
+</td>
+</tr>
+<tr>
+<td>
+_cost_equality_semi_join
+</td>
+<td>
+TRUE
+</td>
+<td>
+enables costing of equality semi-join
+</td>
+</tr>
+<tr>
+<td>
+_cpu_count
+</td>
+<td>
+0
+</td>
+<td>
+current number of cpu's for this instance
+</td>
+</tr>
+<tr>
+<td>
+_cpu_to_io
+</td>
+<td>
+0
+</td>
+<td>
+divisor for converting CPU cost to I/O cost
+</td>
+</tr>
+<tr>
+<td>
+_cr_grant_global_role
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, grant lock for CR requests when bloc
+k is in global role
+</td>
+</tr>
+<tr>
+<td>
+_cr_grant_local_role
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, grant lock for CR using 3way ping wh
+en block in local r
+</td>
+</tr>
+<tr>
+<td>
+_cr_server_log_flush
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, flush redo log before serving a CR b
+uffer (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_cursor_db_buffers_pinned
+</td>
+<td>
+18
+</td>
+<td>
+additional number of buffers a cursor can pin
+ at once
+</td>
+</tr>
+<tr>
+<td>
+_cursor_plan_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable collection and display of cursor plans
+</td>
+</tr>
+<tr>
+<td>
+_db_aging_cool_count
+</td>
+<td>
+1
+</td>
+<td>
+Touch count set when buffer cooled
+</td>
+</tr>
+<tr>
+<td>
+_db_aging_freeze_cr
+</td>
+<td>
+FALSE
+</td>
+<td>
+Make CR buffers always be too cold to keep in
+ cache
+</td>
+</tr>
+<tr>
+<td>
+_db_aging_hot_criteria
+</td>
+<td>
+2
+</td>
+<td>
+Touch count which sends a buffer to head of r
+eplacement list
+</td>
+</tr>
+<tr>
+<td>
+_db_aging_stay_count
+</td>
+<td>
+0
+</td>
+<td>
+Touch count set when buffer moved to head of
+replacement list
+</td>
+</tr>
+<tr>
+<td>
+_db_aging_touch_time
+</td>
+<td>
+3
+</td>
+<td>
+Touch count which sends a buffer to head of r
+eplacement list
+</td>
+</tr>
+<tr>
+<td>
+_db_always_check_system_ts
+</td>
+<td>
+TRUE
+</td>
+<td>
+Always perform block check and checksum for S
+ystem tablespace
+</td>
+</tr>
+<tr>
+<td>
+_db_block_buffers
+</td>
+<td>
+3003
+</td>
+<td>
+Number of database blocks cached in memory: h
+idden parameter
+</td>
+</tr>
+<tr>
+<td>
+_db_block_cache_clone
+</td>
+<td>
+FALSE
+</td>
+<td>
+Always clone data blocks on get (for debuggin
+g)
+</td>
+</tr>
+<tr>
+<td>
+_db_block_cache_num_umap
+</td>
+<td>
+0
+</td>
+<td>
+number of unmapped buffers (for tracking swap
+ calls on blocks)
+</td>
+</tr>
+<tr>
+<td>
+_db_block_cache_protect
+</td>
+<td>
+FALSE
+</td>
+<td>
+protect database blocks (true only when debug
+ging)
+</td>
+</tr>
+<tr>
+<td>
+_db_block_check_for_debug
+</td>
+<td>
+FALSE
+</td>
+<td>
+Check more and dump block before image for de
+bugging
+</td>
+</tr>
+<tr>
+<td>
+_db_block_granule_interval
+</td>
+<td>
+10
+</td>
+<td>
+number of lru latches
+</td>
+</tr>
+<tr>
+<td>
+_db_block_hash_buckets
+</td>
+<td>
+6007
+</td>
+<td>
+Number of database block hash buckets
+</td>
+</tr>
+<tr>
+<td>
+_db_block_hash_latches
+</td>
+<td>
+1024
+</td>
+<td>
+Number of database block hash latches
+</td>
+</tr>
+<tr>
+<td>
+_db_block_hi_priority_batch_size
+</td>
+<td>
+0
+</td>
+<td>
+Fraction of writes for high priority reasons
+</td>
+</tr>
+<tr>
+<td>
+_db_block_lru_latches
+</td>
+<td>
+8
+</td>
+<td>
+number of lru latches
+</td>
+</tr>
+<tr>
+<td>
+_db_block_max_cr_dba
+</td>
+<td>
+6
+</td>
+<td>
+Maximum Allowed Number of CR buffers per dba
+</td>
+</tr>
+<tr>
+<td>
+_db_block_max_dirty_target
+</td>
+<td>
+0
+</td>
+<td>
+Upper bound on modified buffers/recovery read
+s
+</td>
+</tr>
+<tr>
+<td>
+_db_block_max_scan_pct
+</td>
+<td>
+40
+</td>
+<td>
+Percentage of buffers to inspect when looking
+ for free
+</td>
+</tr>
+<tr>
+<td>
+_db_block_med_priority_batch_size
+</td>
+<td>
+0
+</td>
+<td>
+Fraction of writes for medium priority reason
+s
+</td>
+</tr>
+<tr>
+<td>
+_db_block_numa
+</td>
+<td>
+1
+</td>
+<td>
+Number of NUMA nodes
+</td>
+</tr>
+<tr>
+<td>
+_db_block_prefetch_quota
+</td>
+<td>
+10
+</td>
+<td>
+Prefetch quota as a percent of cache size
+</td>
+</tr>
+<tr>
+<td>
+_db_block_trace_protect
+</td>
+<td>
+FALSE
+</td>
+<td>
+trace buffer protect calls
+</td>
+</tr>
+<tr>
+<td>
+_db_cache_advice_batch_size
+</td>
+<td>
+128
+</td>
+<td>
+cache advisory simulation batch size
+</td>
+</tr>
+<tr>
+<td>
+_db_cache_advice_sample_factor
+</td>
+<td>
+4
+</td>
+<td>
+cache advisory sampling factor
+</td>
+</tr>
+<tr>
+<td>
+_db_file_direct_io_count
+</td>
+<td>
+1048576
+</td>
+<td>
+Sequential I/O buf size
+</td>
+</tr>
+<tr>
+<td>
+_db_file_noncontig_mblock_read_count
+</td>
+<td>
+11
+</td>
+<td>
+number of noncontiguous db blocks to be prefe
+tched
+</td>
+</tr>
+<tr>
+<td>
+_db_handles
+</td>
+<td>
+750
+</td>
+<td>
+System-wide simultaneous buffer operations
+</td>
+</tr>
+<tr>
+<td>
+_db_handles_cached
+</td>
+<td>
+5
+</td>
+<td>
+Buffer handles cached each process
+</td>
+</tr>
+<tr>
+<td>
+_db_large_dirty_queue
+</td>
+<td>
+25
+</td>
+<td>
+Number of buffers which force dirty queue to
+be written
+</td>
+</tr>
+<tr>
+<td>
+_db_mttr_advice
+</td>
+<td>
+ON
+</td>
+<td>
+MTTR advisory
+</td>
+</tr>
+<tr>
+<td>
+_db_mttr_partitions
+</td>
+<td>
+0
+</td>
+<td>
+number of partitions for MTTR advisory
+</td>
+</tr>
+<tr>
+<td>
+_db_mttr_sample_factor
+</td>
+<td>
+64
+</td>
+<td>
+MTTR simulation sampling factor
+</td>
+</tr>
+<tr>
+<td>
+_db_mttr_sim_target
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MTTR simulation targets
+</td>
+</tr>
+<tr>
+<td>
+_db_mttr_sim_trace_size
+</td>
+<td>
+256
+</td>
+<td>
+MTTR simulation trace size
+</td>
+</tr>
+<tr>
+<td>
+_db_mttr_trace_to_alert
+</td>
+<td>
+FALSE
+</td>
+<td>
+dump trace entries to alert file
+</td>
+</tr>
+<tr>
+<td>
+_db_percent_hot_default
+</td>
+<td>
+50
+</td>
+<td>
+Percent of default buffer pool considered hot
+</td>
+</tr>
+<tr>
+<td>
+_db_percent_hot_keep
+</td>
+<td>
+0
+</td>
+<td>
+Percent of keep buffer pool considered hot
+</td>
+</tr>
+<tr>
+<td>
+_db_percent_hot_recycle
+</td>
+<td>
+0
+</td>
+<td>
+Percent of recycle buffer pool considered hot
+</td>
+</tr>
+<tr>
+<td>
+_db_writer_chunk_writes
+</td>
+<td>
+0
+</td>
+<td>
+Number of writes DBWR should wait for
+</td>
+</tr>
+<tr>
+<td>
+_db_writer_histogram_statistics
+</td>
+<td>
+FALSE
+</td>
+<td>
+maintain dbwr histogram statistics in x$kcbbh
+s
+</td>
+</tr>
+<tr>
+<td>
+_db_writer_max_writes
+</td>
+<td>
+0
+</td>
+<td>
+Max number of outstanding DB Writer IOs
+</td>
+</tr>
+<tr>
+<td>
+_db_writer_scan_depth_pct
+</td>
+<td>
+25
+</td>
+<td>
+Percentage of LRU buffers for dbwr to scan wh
+en looking for dirt
+</td>
+</tr>
+<tr>
+<td>
+_dbg_proc_startup
+</td>
+<td>
+FALSE
+</td>
+<td>
+debug process startup
+</td>
+</tr>
+<tr>
+<td>
+_dbwr_async_io
+</td>
+<td>
+TRUE
+</td>
+<td>
+Enable dbwriter asynchronous writes
+</td>
+</tr>
+<tr>
+<td>
+_dbwr_scan_interval
+</td>
+<td>
+10
+</td>
+<td>
+dbwriter scan interval
+</td>
+</tr>
+<tr>
+<td>
+_dbwr_tracing
+</td>
+<td>
+0
+</td>
+<td>
+Enable dbwriter tracing
+</td>
+</tr>
+<tr>
+<td>
+_default_non_equality_sel_check
+</td>
+<td>
+TRUE
+</td>
+<td>
+sanity check on default selectivity for like/
+range predicate
+</td>
+</tr>
+<tr>
+<td>
+_defer_multiple_waiters
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, defer down converts when there were
+waiters (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_diag_daemon
+</td>
+<td>
+TRUE
+</td>
+<td>
+start DIAG daemon
+</td>
+</tr>
+<tr>
+<td>
+_disable_file_locks
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable file locks for control, data, redo lo
+g files
+</td>
+</tr>
+<tr>
+<td>
+_disable_incremental_checkpoints
+</td>
+<td>
+FALSE
+</td>
+<td>
+Disable incremental checkpoints for thread re
+covery
+</td>
+</tr>
+<tr>
+<td>
+_disable_kcbhxor_osd
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable kcbh(c)xor OSD functionality
+</td>
+</tr>
+<tr>
+<td>
+_disable_latch_free_SCN_writes_via_32cas
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable latch-free SCN writes using 32-bit co
+mpare &amp; swap
+</td>
+</tr>
+<tr>
+<td>
+_disable_latch_free_SCN_writes_via_64cas
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable latch-free SCN writes using 64-bit co
+mpare &amp; swap
+</td>
+</tr>
+<tr>
+<td>
+_disable_logging
+</td>
+<td>
+FALSE
+</td>
+<td>
+Disable logging
+</td>
+</tr>
+<tr>
+<td>
+_disable_multiple_block_sizes
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable multiple block size support (for debu
+gging)
+</td>
+</tr>
+<tr>
+<td>
+_disable_ntlog_events
+</td>
+<td>
+FALSE
+</td>
+<td>
+Disable logging to NT event log
+</td>
+</tr>
+<tr>
+<td>
+_disable_odm
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable odm feature
+</td>
+</tr>
+<tr>
+<td>
+_disable_recoverable_recovery
+</td>
+<td>
+FALSE
+</td>
+<td>
+Disable the new recoverable recovery mechanis
+m
+</td>
+</tr>
+<tr>
+<td>
+_disable_system_state
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable system state dump
+</td>
+</tr>
+<tr>
+<td>
+_discrete_transactions_enabled
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable OLTP mode
+</td>
+</tr>
+<tr>
+<td>
+_dispatcher_rate_scale
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+scale to display rate statistic (100ths of a
+second)
+</td>
+</tr>
+<tr>
+<td>
+_dispatcher_rate_ttl
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+time-to-live for rate statistic (100ths of a
+second)
+</td>
+</tr>
+<tr>
+<td>
+_distributed_recovery_connection_hold_time
+</td>
+<td>
+200
+</td>
+<td>
+number of seconds RECO holds outbound connect
+ions open
+</td>
+</tr>
+<tr>
+<td>
+_dlmtrace
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+Trace string of lock types(s)
+</td>
+</tr>
+<tr>
+<td>
+_domain_index_batch_size
+</td>
+<td>
+2000
+</td>
+<td>
+maximum number of rows from one call to domai
+n index fetch routi
+</td>
+</tr>
+<tr>
+<td>
+_domain_index_dml_batch_size
+</td>
+<td>
+200
+</td>
+<td>
+maximum number of rows for one call to domain
+ index dml routines
+</td>
+</tr>
+<tr>
+<td>
+_dss_cache_flush
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable full cache flush for parallel executio
+n
+</td>
+</tr>
+<tr>
+<td>
+_dump_MTTR_to_trace
+</td>
+<td>
+FALSE
+</td>
+<td>
+Dump High Availability MTTR infromation to CK
+PT trace file
+</td>
+</tr>
+<tr>
+<td>
+_dump_system_state_scope
+</td>
+<td>
+local
+</td>
+<td>
+scope of sysstate dump during instance termin
+ation
+</td>
+</tr>
+<tr>
+<td>
+_dynamic_rls_policies
+</td>
+<td>
+TRUE
+</td>
+<td>
+rls policies are dynamic
+</td>
+</tr>
+<tr>
+<td>
+_dynamic_stats_threshold
+</td>
+<td>
+30
+</td>
+<td>
+delay threshold (in seconds) between sending
+statistics messages
+</td>
+</tr>
+<tr>
+<td>
+_eliminate_common_subexpr
+</td>
+<td>
+TRUE
+</td>
+<td>
+enables elimination of common sub-expressions
+</td>
+</tr>
+<tr>
+<td>
+_enable_NUMA_optimization
+</td>
+<td>
+TRUE
+</td>
+<td>
+Enable NUMA specific optimizations
+</td>
+</tr>
+<tr>
+<td>
+_enable_block_level_transaction_recovery
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable block level recovery
+</td>
+</tr>
+<tr>
+<td>
+_enable_cscn_caching
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable commit SCN caching for all transaction
+s
+</td>
+</tr>
+<tr>
+<td>
+_enable_default_affinity
+</td>
+<td>
+0
+</td>
+<td>
+to enable default implementation of affinity
+osds
+</td>
+</tr>
+<tr>
+<td>
+_enable_kgh_policy
+</td>
+<td>
+FALSE
+</td>
+<td>
+temporary to disable/enable kgh policy
+</td>
+</tr>
+<tr>
+<td>
+_enable_list_io
+</td>
+<td>
+FALSE
+</td>
+<td>
+Enable List I/O
+</td>
+</tr>
+<tr>
+<td>
+_enable_multitable_sampling
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable multitable sampling
+</td>
+</tr>
+<tr>
+<td>
+_enable_type_dep_selectivity
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable type dependent selectivity estimates
+</td>
+</tr>
+<tr>
+<td>
+_enqueue_debug_multi_instance
+</td>
+<td>
+FALSE
+</td>
+<td>
+debug enqueue multi instance
+</td>
+</tr>
+<tr>
+<td>
+_enqueue_hash
+</td>
+<td>
+375
+</td>
+<td>
+enqueue hash table length
+</td>
+</tr>
+<tr>
+<td>
+_enqueue_hash_chain_latches
+</td>
+<td>
+2
+</td>
+<td>
+enqueue hash chain latches
+</td>
+</tr>
+<tr>
+<td>
+_enqueue_locks
+</td>
+<td>
+2230
+</td>
+<td>
+locks for managed enqueues
+</td>
+</tr>
+<tr>
+<td>
+_explain_rewrite_mode
+</td>
+<td>
+FALSE
+</td>
+<td>
+allow additional messages to be generated dur
+ing explain rewrite
+</td>
+</tr>
+<tr>
+<td>
+_fairness_threshold
+</td>
+<td>
+4
+</td>
+<td>
+number of times to CR serve before downgradin
+g lock (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_fast_full_scan_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable/disable index fast full scan
+</td>
+</tr>
+<tr>
+<td>
+_fifth_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+fifth spare parameter - string
+</td>
+</tr>
+<tr>
+<td>
+_first_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+first spare parameter - integer
+</td>
+</tr>
+<tr>
+<td>
+_force_datefold_trunc
+</td>
+<td>
+FALSE
+</td>
+<td>
+force use of trunc for datefolding rewrite
+</td>
+</tr>
+<tr>
+<td>
+_force_temptables_for_gsets
+</td>
+<td>
+FALSE
+</td>
+<td>
+executes concatenation of rollups using temp
+tables
+</td>
+</tr>
+<tr>
+<td>
+_fourth_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+fourth spare parameter - string
+</td>
+</tr>
+<tr>
+<td>
+_full_pwise_join_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable full partition-wise join when TRUE
+</td>
+</tr>
+<tr>
+<td>
+_gby_onekey_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable use of one comparison of all group by
+keys
+</td>
+</tr>
+<tr>
+<td>
+_gc_defer_time
+</td>
+<td>
+3
+</td>
+<td>
+how long to defer down converts for hot buffe
+rs (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_gc_integrity_checks
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, enable expensive integrity checks (D
+FS)
+</td>
+</tr>
+<tr>
+<td>
+_gc_latches
+</td>
+<td>
+4
+</td>
+<td>
+number of latches per LMS process (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_gcs_fast_reconfig
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, enable fast reconfiguration for gcs
+locks
+</td>
+</tr>
+<tr>
+<td>
+_gcs_latches
+</td>
+<td>
+128
+</td>
+<td>
+number of gcs resource hash latches to be all
+ocated
+</td>
+</tr>
+<tr>
+<td>
+_gcs_resources
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+number of gcs resources to be allocated
+</td>
+</tr>
+<tr>
+<td>
+_generalized_pruning_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+controls extensions to partition pruning for
+general predicates
+</td>
+</tr>
+<tr>
+<td>
+_groupby_nopushdown_cut_ratio
+</td>
+<td>
+3
+</td>
+<td>
+groupby nopushdown cut ratio
+</td>
+</tr>
+<tr>
+<td>
+_groupby_orderby_combine
+</td>
+<td>
+5000
+</td>
+<td>
+groupby/orderby don't combine threshold
+</td>
+</tr>
+<tr>
+<td>
+_gs_anti_semi_join_allowed
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable anti/semi join for the GS query
+</td>
+</tr>
+<tr>
+<td>
+_hard_protection
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE enable H.A.R.D specific format change
+s
+</td>
+</tr>
+<tr>
+<td>
+_hash_multiblock_io_count
+</td>
+<td>
+0
+</td>
+<td>
+number of blocks hash join will read/write at
+ once
+</td>
+</tr>
+<tr>
+<td>
+_high_server_threshold
+</td>
+<td>
+0
+</td>
+<td>
+high server thresholds
+</td>
+</tr>
+<tr>
+<td>
+_idl_conventional_index_maintenance
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable conventional index maintenance for ins
+ert direct load
+</td>
+</tr>
+<tr>
+<td>
+_ignore_desc_in_index
+</td>
+<td>
+FALSE
+</td>
+<td>
+ignore DESC in indexes, sort those columns as
+cending anyhow
+</td>
+</tr>
+<tr>
+<td>
+_improved_outerjoin_card
+</td>
+<td>
+TRUE
+</td>
+<td>
+improved outer-join cardinality calculation
+</td>
+</tr>
+<tr>
+<td>
+_improved_row_length_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable the improvements for computing the ave
+rage row length
+</td>
+</tr>
+<tr>
+<td>
+_imr_active
+</td>
+<td>
+TRUE
+</td>
+<td>
+Activate Instance Membership Recovery feature
+</td>
+</tr>
+<tr>
+<td>
+_imr_max_reconfig_delay
+</td>
+<td>
+300
+</td>
+<td>
+Maximum Reconfiguration delay (seconds)
+</td>
+</tr>
+<tr>
+<td>
+_imr_splitbrain_res_wait
+</td>
+<td>
+600
+</td>
+<td>
+Maximum wait for split-brain resolution (seco
+nds)
+</td>
+</tr>
+<tr>
+<td>
+_index_join_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable the use of index joins
+</td>
+</tr>
+<tr>
+<td>
+_index_prefetch_factor
+</td>
+<td>
+100
+</td>
+<td>
+index prefetching factor
+</td>
+</tr>
+<tr>
+<td>
+_init_sql_file
+</td>
+<td>
+%ORACLE_HOME%\RDBMS\ADMIN
+\SQL.BSQ
+</td>
+<td>
+File containing SQL statements to execute upo
+n database creation
+</td>
+</tr>
+<tr>
+<td>
+_insert_enable_hwm_brokered
+</td>
+<td>
+TRUE
+</td>
+<td>
+during parallel inserts high water marks are
+brokered
+</td>
+</tr>
+<tr>
+<td>
+_inst_locking_period
+</td>
+<td>
+5
+</td>
+<td>
+period an instance can retain a newly acquire
+d level1 bitmap
+</td>
+</tr>
+<tr>
+<td>
+_instance_type
+</td>
+<td>
+RDBMS
+</td>
+<td>
+type of instance to be executed
+</td>
+</tr>
+<tr>
+<td>
+_interconnect_checksum
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, checksum interconnect blocks (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_intrapart_pdml_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+Enable intra-partition updates/deletes
+</td>
+</tr>
+<tr>
+<td>
+_io_slaves_disabled
+</td>
+<td>
+FALSE
+</td>
+<td>
+Do not use I/O slaves
+</td>
+</tr>
+<tr>
+<td>
+_ioslave_batch_count
+</td>
+<td>
+1
+</td>
+<td>
+Per attempt IOs picked
+</td>
+</tr>
+<tr>
+<td>
+_ioslave_issue_count
+</td>
+<td>
+500
+</td>
+<td>
+IOs issued before completion check
+</td>
+</tr>
+<tr>
+<td>
+_job_queue_interval
+</td>
+<td>
+5
+</td>
+<td>
+Wakeup interval in seconds for job queue co-o
+rdinator
+</td>
+</tr>
+<tr>
+<td>
+_kcl_commit
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, call kjbcommit (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_conservative_log_flush
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, conservatively log flush before CR s
+erving (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_debug
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, record le history (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_index_split
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, reject pings on blocks in middle of
+a split (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_local_file_time
+</td>
+<td>
+0
+</td>
+<td>
+how often to check for local files (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_name_table_latches
+</td>
+<td>
+16
+</td>
+<td>
+number of name table latches (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_recovery_read_batch
+</td>
+<td>
+8
+</td>
+<td>
+recovery read batch size (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_undo_grouping
+</td>
+<td>
+32
+</td>
+<td>
+grouping for undo block locks (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_undo_locks
+</td>
+<td>
+128
+</td>
+<td>
+number of locks per undo segment (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kcl_use_cr
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, use Fusion CR buffers (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_kdbl_enable_post_allocation
+</td>
+<td>
+FALSE
+</td>
+<td>
+allocate dbas after populating data buffers
+</td>
+</tr>
+<tr>
+<td>
+_keep_recovery_buffers
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, make recovery buffers current (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_keep_remote_column_size
+</td>
+<td>
+FALSE
+</td>
+<td>
+remote column size does not get modified
+</td>
+</tr>
+<tr>
+<td>
+_kghdsidx_count
+</td>
+<td>
+1
+</td>
+<td>
+max kghdsidx count
+</td>
+</tr>
+<tr>
+<td>
+_kgl_bucket_count
+</td>
+<td>
+9
+</td>
+<td>
+index to the bucket count array
+</td>
+</tr>
+<tr>
+<td>
+_kgl_latch_count
+</td>
+<td>
+0
+</td>
+<td>
+number of library cache latches
+</td>
+</tr>
+<tr>
+<td>
+_kgl_multi_instance_invalidation
+</td>
+<td>
+TRUE
+</td>
+<td>
+whether KGL to support multi-instance invalid
+ations
+</td>
+</tr>
+<tr>
+<td>
+_kgl_multi_instance_lock
+</td>
+<td>
+TRUE
+</td>
+<td>
+whether KGL to support multi-instance locks
+</td>
+</tr>
+<tr>
+<td>
+_kgl_multi_instance_pin
+</td>
+<td>
+TRUE
+</td>
+<td>
+whether KGL to support multi-instance pins
+</td>
+</tr>
+<tr>
+<td>
+_kglsim_maxmem_percent
+</td>
+<td>
+5
+</td>
+<td>
+max percentage of shared pool size to be used
+ for KGL advice
+</td>
+</tr>
+<tr>
+<td>
+_kkfi_trace
+</td>
+<td>
+FALSE
+</td>
+<td>
+trace expression substitution
+</td>
+</tr>
+<tr>
+<td>
+_kolfuseslf
+</td>
+<td>
+FALSE
+</td>
+<td>
+allow kolf to use slffopen
+</td>
+</tr>
+<tr>
+<td>
+_ksdxw_cini_flg
+</td>
+<td>
+0
+</td>
+<td>
+ksdxw context initialization flag
+</td>
+</tr>
+<tr>
+<td>
+_ksdxw_nbufs
+</td>
+<td>
+1000
+</td>
+<td>
+ksdxw number of buffers in buffered mode
+</td>
+</tr>
+<tr>
+<td>
+_ksdxw_num_pgw
+</td>
+<td>
+10
+</td>
+<td>
+number of watchpoints on a per-process basis
+</td>
+</tr>
+<tr>
+<td>
+_ksdxw_num_sgw
+</td>
+<td>
+10
+</td>
+<td>
+number of watchpoints to be shared by all pro
+cesses
+</td>
+</tr>
+<tr>
+<td>
+_ksdxw_stack_depth
+</td>
+<td>
+4
+</td>
+<td>
+number of PCs to collect in the stack when wa
+tchpoint is hit
+</td>
+</tr>
+<tr>
+<td>
+_ksi_trace
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+KSI trace string of lock type(s)
+</td>
+</tr>
+<tr>
+<td>
+_ksmg_granule_locking_status
+</td>
+<td>
+1
+</td>
+<td>
+granule locking status
+</td>
+</tr>
+<tr>
+<td>
+_ksmg_granule_size
+</td>
+<td>
+8388608
+</td>
+<td>
+granule size in bytes
+</td>
+</tr>
+<tr>
+<td>
+_ksu_diag_kill_time
+</td>
+<td>
+5
+</td>
+<td>
+number of seconds ksuitm waits before killing
+ diag
+</td>
+</tr>
+<tr>
+<td>
+_ktc_latches
+</td>
+<td>
+0
+</td>
+<td>
+number of ktc latches
+</td>
+</tr>
+<tr>
+<td>
+_ktu_latches
+</td>
+<td>
+0
+</td>
+<td>
+number of KTU latches
+</td>
+</tr>
+<tr>
+<td>
+_large_pool_min_alloc
+</td>
+<td>
+16000
+</td>
+<td>
+minimum allocation size in bytes for the larg
+e allocation pool
+</td>
+</tr>
+<tr>
+<td>
+_last_allocation_period
+</td>
+<td>
+5
+</td>
+<td>
+period over which an instance can retain an a
+ctive level1 bitmap
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_0
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 0
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_1
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 1
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_2
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 2
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_3
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 3
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_4
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 4
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_5
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 5
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_6
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 6
+</td>
+</tr>
+<tr>
+<td>
+_latch_class_7
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch class 7
+</td>
+</tr>
+<tr>
+<td>
+_latch_classes
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+latch classes override
+</td>
+</tr>
+<tr>
+<td>
+_latch_miss_stat_sid
+</td>
+<td>
+0
+</td>
+<td>
+Sid of process for which to collect latch sta
+ts
+</td>
+</tr>
+<tr>
+<td>
+_latch_recovery_alignment
+</td>
+<td>
+998
+</td>
+<td>
+align latch recovery structures
+</td>
+</tr>
+<tr>
+<td>
+_ldr_io_size
+</td>
+<td>
+262144
+</td>
+<td>
+size of write IOs used during a load operatio
+n
+</td>
+</tr>
+<tr>
+<td>
+_left_nested_loops_random
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable random distribution method for left of
+ nestedloops
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_async_io
+</td>
+<td>
+TRUE
+</td>
+<td>
+LGWR Asynchronous IO enabling boolean flag
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_delay_write
+</td>
+<td>
+FALSE
+</td>
+<td>
+LGWR write delay for debugging
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_io_slaves
+</td>
+<td>
+0
+</td>
+<td>
+LGWR I/O slaves
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_max_ns_wt
+</td>
+<td>
+30
+</td>
+<td>
+Maximum wait time for lgwr to allow NetServer
+ to progress
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_ns_nl_max
+</td>
+<td>
+1000
+</td>
+<td>
+Variable to simulate network latency
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_ns_nl_min
+</td>
+<td>
+500
+</td>
+<td>
+Variable to simulate network latency
+</td>
+</tr>
+<tr>
+<td>
+_lgwr_ns_sim_err
+</td>
+<td>
+0
+</td>
+<td>
+Variable to simulate errors lgwrns
+</td>
+</tr>
+<tr>
+<td>
+_library_cache_advice
+</td>
+<td>
+TRUE
+</td>
+<td>
+whether KGL advice should be turned on
+</td>
+</tr>
+<tr>
+<td>
+_like_with_bind_as_equality
+</td>
+<td>
+FALSE
+</td>
+<td>
+treat LIKE predicate with bind as an equality
+ predicate
+</td>
+</tr>
+<tr>
+<td>
+_lm_activate_lms_threshold
+</td>
+<td>
+100
+</td>
+<td>
+threshold value to activate an additional lms
+</td>
+</tr>
+<tr>
+<td>
+_lm_cache_lvl0_cleanup
+</td>
+<td>
+0
+</td>
+<td>
+how often to cleanup level 0 cache res (in se
+c)
+</td>
+</tr>
+<tr>
+<td>
+_lm_cache_res_cleanup
+</td>
+<td>
+25
+</td>
+<td>
+percentage of cached resources should be clea
+nup
+</td>
+</tr>
+<tr>
+<td>
+_lm_cache_res_type
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+cache resource: string of lock types(s)
+</td>
+</tr>
+<tr>
+<td>
+_lm_dd_interval
+</td>
+<td>
+60
+</td>
+<td>
+dd time interval in seconds
+</td>
+</tr>
+<tr>
+<td>
+_lm_direct_sends
+</td>
+<td>
+all
+</td>
+<td>
+Processes which will do direct sends
+</td>
+</tr>
+<tr>
+<td>
+_lm_drm_window
+</td>
+<td>
+32
+</td>
+<td>
+dynamic remastering bucket window size
+</td>
+</tr>
+<tr>
+<td>
+_lm_dynamic_lms
+</td>
+<td>
+FALSE
+</td>
+<td>
+dynamic lms invocation
+</td>
+</tr>
+<tr>
+<td>
+_lm_dynamic_load
+</td>
+<td>
+TRUE
+</td>
+<td>
+dynamic load adjustment
+</td>
+</tr>
+<tr>
+<td>
+_lm_dynamic_remastering
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE enables dynamic remastering
+</td>
+</tr>
+<tr>
+<td>
+_lm_enq_lock_freelist
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+Number of ges enqueue element freelist
+</td>
+</tr>
+<tr>
+<td>
+_lm_enq_rcfg
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE enables enqueue reconfiguration
+</td>
+</tr>
+<tr>
+<td>
+_lm_enqeue_freelist
+</td>
+<td>
+3
+</td>
+<td>
+Number of enqueue freelist
+</td>
+</tr>
+<tr>
+<td>
+_lm_file_affinity
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+mapping between file id and master instance n
+umber
+</td>
+</tr>
+<tr>
+<td>
+_lm_lmd_waittime
+</td>
+<td>
+4
+</td>
+<td>
+default wait time for lmd
+</td>
+</tr>
+<tr>
+<td>
+_lm_lms
+</td>
+<td>
+0
+</td>
+<td>
+number of background global cache server proc
+esses to start
+</td>
+</tr>
+<tr>
+<td>
+_lm_lms_waittime
+</td>
+<td>
+1
+</td>
+<td>
+default wait time for lms
+</td>
+</tr>
+<tr>
+<td>
+_lm_locks
+</td>
+<td>
+12000
+</td>
+<td>
+number of enqueues configured for cluster dat
+abase
+</td>
+</tr>
+<tr>
+<td>
+_lm_master_weight
+</td>
+<td>
+1
+</td>
+<td>
+master resource weight for this instance
+</td>
+</tr>
+<tr>
+<td>
+_lm_max_lms
+</td>
+<td>
+0
+</td>
+<td>
+max. number of background global cache server
+ processes
+</td>
+</tr>
+<tr>
+<td>
+_lm_min_lms
+</td>
+<td>
+0
+</td>
+<td>
+min. number of background global cache server
+ processes
+</td>
+</tr>
+<tr>
+<td>
+_lm_msg_batch_size
+</td>
+<td>
+2048
+</td>
+<td>
+GES batch message size
+</td>
+</tr>
+<tr>
+<td>
+_lm_msg_cache_thresholds
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+GES message buffer caching threshold
+</td>
+</tr>
+<tr>
+<td>
+_lm_msg_cleanup_interval
+</td>
+<td>
+3000
+</td>
+<td>
+GES message buffer cleanup interval time
+</td>
+</tr>
+<tr>
+<td>
+_lm_node_join_opt
+</td>
+<td>
+FALSE
+</td>
+<td>
+cluster database node join optimization in re
+config
+</td>
+</tr>
+<tr>
+<td>
+_lm_non_fault_tolerant
+</td>
+<td>
+FALSE
+</td>
+<td>
+disable cluster database fault-tolerance mode
+</td>
+</tr>
+<tr>
+<td>
+_lm_num_pcmhv_latches
+</td>
+<td>
+0
+</td>
+<td>
+number of latches covering the PCM HV buckets
+ in cgs
+</td>
+</tr>
+<tr>
+<td>
+_lm_proc_freeze_timeout
+</td>
+<td>
+300
+</td>
+<td>
+reconfiguration: process freeze timeout
+</td>
+</tr>
+<tr>
+<td>
+_lm_process_batching
+</td>
+<td>
+TRUE
+</td>
+<td>
+GES implicit process batching for IPC message
+s
+</td>
+</tr>
+<tr>
+<td>
+_lm_procs
+</td>
+<td>
+127
+</td>
+<td>
+number of client processes configured for clu
+ster database
+</td>
+</tr>
+<tr>
+<td>
+_lm_rcfg_timeout
+</td>
+<td>
+180000
+</td>
+<td>
+Reconfiguration timeout
+</td>
+</tr>
+<tr>
+<td>
+_lm_rcv_buffer_size
+</td>
+<td>
+32768
+</td>
+<td>
+the size of receive buffer
+</td>
+</tr>
+<tr>
+<td>
+_lm_res_hash_bucket
+</td>
+<td>
+0
+</td>
+<td>
+number of resource hash buckets
+</td>
+</tr>
+<tr>
+<td>
+_lm_res_part
+</td>
+<td>
+1289
+</td>
+<td>
+number of resource partition configured for g
+cs
+</td>
+</tr>
+<tr>
+<td>
+_lm_ress
+</td>
+<td>
+6000
+</td>
+<td>
+number of resources configured for cluster da
+tabase
+</td>
+</tr>
+<tr>
+<td>
+_lm_send_buffers
+</td>
+<td>
+10000
+</td>
+<td>
+number of cluster database send buffers
+</td>
+</tr>
+<tr>
+<td>
+_lm_send_queue_batching
+</td>
+<td>
+TRUE
+</td>
+<td>
+GES send queue message batching
+</td>
+</tr>
+<tr>
+<td>
+_lm_send_queue_length
+</td>
+<td>
+5000
+</td>
+<td>
+GES send queue maximum length
+</td>
+</tr>
+<tr>
+<td>
+_lm_share_lock_opt
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE enables share lock optimization
+</td>
+</tr>
+<tr>
+<td>
+_lm_sq_batch_factor
+</td>
+<td>
+2
+</td>
+<td>
+GES send queue minimum batching factor
+</td>
+</tr>
+<tr>
+<td>
+_lm_sync_timeout
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+Synchronization timeout for DLM reconfigurati
+on steps
+</td>
+</tr>
+<tr>
+<td>
+_lm_ticket_active_sendback
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+Flow control ticket active sendback threshold
+</td>
+</tr>
+<tr>
+<td>
+_lm_tickets
+</td>
+<td>
+1000
+</td>
+<td>
+GES messaging tickets
+</td>
+</tr>
+<tr>
+<td>
+_lm_tx_delta
+</td>
+<td>
+16
+</td>
+<td>
+TX lock localization delta
+</td>
+</tr>
+<tr>
+<td>
+_lm_validate_resource_type
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE enables resource name validation
+</td>
+</tr>
+<tr>
+<td>
+_lm_xids
+</td>
+<td>
+139
+</td>
+<td>
+number of transaction IDs configured for clus
+ter database
+</td>
+</tr>
+<tr>
+<td>
+_load_without_compile
+</td>
+<td>
+none
+</td>
+<td>
+Load PL/SQL or Database objects without compi
+lation
+</td>
+</tr>
+<tr>
+<td>
+_local_communication_costing_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable local communication costing when TRUE
+</td>
+</tr>
+<tr>
+<td>
+_local_communication_ratio
+</td>
+<td>
+50
+</td>
+<td>
+set the ratio between global and local commun
+ication (0..100)
+</td>
+</tr>
+<tr>
+<td>
+_lock_sga_areas
+</td>
+<td>
+0
+</td>
+<td>
+Lock specified areas of the SGA in physical m
+emory
+</td>
+</tr>
+<tr>
+<td>
+_log_archive_buffer_size
+</td>
+<td>
+2048
+</td>
+<td>
+Size of each archival buffer in log file bloc
+ks
+</td>
+</tr>
+<tr>
+<td>
+_log_archive_buffers
+</td>
+<td>
+4
+</td>
+<td>
+Number of buffers to allocate for archiving
+</td>
+</tr>
+<tr>
+<td>
+_log_archive_callout
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+archival callout
+</td>
+</tr>
+<tr>
+<td>
+_log_archive_delta_sync_wait
+</td>
+<td>
+0
+</td>
+<td>
+iterative sleep time in centiseconds seconds
+when SYNC=PARALLEL
+</td>
+</tr>
+<tr>
+<td>
+_log_archive_net_timeout
+</td>
+<td>
+0
+</td>
+<td>
+maximum network wait time in seconds when SYN
+C=PARALLEL
+</td>
+</tr>
+<tr>
+<td>
+_log_blocks_during_backup
+</td>
+<td>
+TRUE
+</td>
+<td>
+log block images when changed during backup
+</td>
+</tr>
+<tr>
+<td>
+_log_buffers_corrupt
+</td>
+<td>
+FALSE
+</td>
+<td>
+corrupt redo buffers before write
+</td>
+</tr>
+<tr>
+<td>
+_log_buffers_debug
+</td>
+<td>
+FALSE
+</td>
+<td>
+debug redo buffers (slows things down)
+</td>
+</tr>
+<tr>
+<td>
+_log_checkpoint_recovery_check
+</td>
+<td>
+0
+</td>
+<td>
+# redo blocks to verify after checkpoint
+</td>
+</tr>
+<tr>
+<td>
+_log_committime_block_cleanout
+</td>
+<td>
+FALSE
+</td>
+<td>
+Log commit-time block cleanout
+</td>
+</tr>
+<tr>
+<td>
+_log_debug_multi_instance
+</td>
+<td>
+FALSE
+</td>
+<td>
+debug redo multi instance code
+</td>
+</tr>
+<tr>
+<td>
+_log_io_size
+</td>
+<td>
+0
+</td>
+<td>
+automatically initiate log write if this many
+ redo blocks in buf
+</td>
+</tr>
+<tr>
+<td>
+_log_simultaneous_copies
+</td>
+<td>
+4
+</td>
+<td>
+number of simultaneous copies into redo buffe
+r(# of copy latches
+</td>
+</tr>
+<tr>
+<td>
+_log_space_errors
+</td>
+<td>
+TRUE
+</td>
+<td>
+should we report space errors to alert log
+</td>
+</tr>
+<tr>
+<td>
+_log_switch_timeout
+</td>
+<td>
+0
+</td>
+<td>
+Maximum number of seconds redos in the curren
+t log could span
+</td>
+</tr>
+<tr>
+<td>
+_low_server_threshold
+</td>
+<td>
+0
+</td>
+<td>
+low server thresholds
+</td>
+</tr>
+<tr>
+<td>
+_master_direct_sends
+</td>
+<td>
+31
+</td>
+<td>
+direct sends for messages from master (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_mav_refresh_consistent_read
+</td>
+<td>
+TRUE
+</td>
+<td>
+refresh materialized views using consistent r
+ead snapshot
+</td>
+</tr>
+<tr>
+<td>
+_mav_refresh_double_count_prevented
+</td>
+<td>
+FALSE
+</td>
+<td>
+materialized view MAV refreshes avoid double
+counting
+</td>
+</tr>
+<tr>
+<td>
+_mav_refresh_opt
+</td>
+<td>
+0
+</td>
+<td>
+optimizations during refresh of materialized
+views
+</td>
+</tr>
+<tr>
+<td>
+_mav_refresh_unionall_tables
+</td>
+<td>
+3
+</td>
+<td>
+# tables for union all expansion during mater
+ialized view refres
+</td>
+</tr>
+<tr>
+<td>
+_max_exponential_sleep
+</td>
+<td>
+0
+</td>
+<td>
+max sleep during exponential backoff
+</td>
+</tr>
+<tr>
+<td>
+_max_sleep_holding_latch
+</td>
+<td>
+4
+</td>
+<td>
+max time to sleep while holding a latch
+</td>
+</tr>
+<tr>
+<td>
+_messages
+</td>
+<td>
+300
+</td>
+<td>
+message queue resources - dependent on # proc
+esses &amp; # buffers
+</td>
+</tr>
+<tr>
+<td>
+_minimal_stats_aggregation
+</td>
+<td>
+TRUE
+</td>
+<td>
+prohibit stats aggregation at compile/partiti
+on maintenance time
+</td>
+</tr>
+<tr>
+<td>
+_minimum_giga_scn
+</td>
+<td>
+0
+</td>
+<td>
+Minimum SCN to start with in 2^30 units
+</td>
+</tr>
+<tr>
+<td>
+_multi_join_key_table_lookup
+</td>
+<td>
+TRUE
+</td>
+<td>
+TRUE iff multi-join-key table lookup prefetch
+ is enabled
+</td>
+</tr>
+<tr>
+<td>
+_mv_refresh_delta_fraction
+</td>
+<td>
+10
+</td>
+<td>
+delta mv as fractional percentage of size of
+mv
+</td>
+</tr>
+<tr>
+<td>
+_mv_refresh_eut
+</td>
+<td>
+TRUE
+</td>
+<td>
+refresh materialized views using EUT(partitio
+n)-based algorithm
+</td>
+</tr>
+<tr>
+<td>
+_mv_refresh_new_setup_disabled
+</td>
+<td>
+FALSE
+</td>
+<td>
+materialized view MV refresh new setup disabl
+ing
+</td>
+</tr>
+<tr>
+<td>
+_mv_refresh_selections
+</td>
+<td>
+TRUE
+</td>
+<td>
+create materialized views with selections and
+ fast refresh
+</td>
+</tr>
+<tr>
+<td>
+_mv_refresh_use_stats
+</td>
+<td>
+TRUE
+</td>
+<td>
+pass cardinality hints to refresh queries
+</td>
+</tr>
+<tr>
+<td>
+_nchar_imp_cnv
+</td>
+<td>
+TRUE
+</td>
+<td>
+NLS allow Implicit Conversion between CHAR an
+d NCHAR
+</td>
+</tr>
+<tr>
+<td>
+_ncmb_readahead_enabled
+</td>
+<td>
+0
+</td>
+<td>
+enable multi-block readahead for an index sca
+n
+</td>
+</tr>
+<tr>
+<td>
+_ncmb_readahead_tracing
+</td>
+<td>
+0
+</td>
+<td>
+turn on multi-block readahead tracing
+</td>
+</tr>
+<tr>
+<td>
+_nested_loop_fudge
+</td>
+<td>
+100
+</td>
+<td>
+nested loop fudge
+</td>
+</tr>
+<tr>
+<td>
+_nested_mav_fast_oncommit_enabled
+</td>
+<td>
+FALSE
+</td>
+<td>
+nested MAV refresh fast on commit allowed
+</td>
+</tr>
+<tr>
+<td>
+_new_initial_join_orders
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable initial join orders based on new order
+ing heuristics
+</td>
+</tr>
+<tr>
+<td>
+_new_sort_cost_estimate
+</td>
+<td>
+TRUE
+</td>
+<td>
+enables the use of new cost estimate for sort
+</td>
+</tr>
+<tr>
+<td>
+_no_objects
+</td>
+<td>
+FALSE
+</td>
+<td>
+no object features are used
+</td>
+</tr>
+<tr>
+<td>
+_no_or_expansion
+</td>
+<td>
+FALSE
+</td>
+<td>
+OR expansion during optimization disabled
+</td>
+</tr>
+<tr>
+<td>
+_ns_max_flush_wt
+</td>
+<td>
+30
+</td>
+<td>
+Flush wait time for NetServer to flush oustan
+ding writes
+</td>
+</tr>
+<tr>
+<td>
+_num_longop_child_latches
+</td>
+<td>
+2
+</td>
+<td>
+number of child latches for long op array
+</td>
+</tr>
+<tr>
+<td>
+_number_cached_attributes
+</td>
+<td>
+10
+</td>
+<td>
+maximum number of cached attributes per insta
+nce
+</td>
+</tr>
+<tr>
+<td>
+_object_statistics
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable the object level statistics collection
+</td>
+</tr>
+<tr>
+<td>
+_offline_rollback_segments
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+offline undo segment list
+</td>
+</tr>
+<tr>
+<td>
+_ogms_home
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+GMS home directory
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_buffer_size
+</td>
+<td>
+1048576
+</td>
+<td>
+OLAP Aggregate max buffer size
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_child_fragment_size
+</td>
+<td>
+32
+</td>
+<td>
+OLAP Aggregate child fragment size
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_child_max_size
+</td>
+<td>
+32768
+</td>
+<td>
+OLAP Aggregate child list max size
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_function_cache_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+OLAP Aggregate function cache enabler
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_function_merge_threshold
+</td>
+<td>
+32768
+</td>
+<td>
+OLAP Aggregate function merge threshold
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_max_thread_tuples
+</td>
+<td>
+5000
+</td>
+<td>
+OLAP Aggregate max thread tuples creation
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_min_buffer_size
+</td>
+<td>
+1024
+</td>
+<td>
+OLAP Aggregate min buffer size
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_min_thread_status
+</td>
+<td>
+64
+</td>
+<td>
+OLAP Aggregate minimum cardinality of dimensi
+ons for thread
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_statlen_thresh
+</td>
+<td>
+1024
+</td>
+<td>
+OLAP Aggregate status array usage threshold
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_store_probability
+</td>
+<td>
+100
+</td>
+<td>
+OLAP Aggregate function storeback probability
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_work_per_thread
+</td>
+<td>
+1024
+</td>
+<td>
+OLAP Aggregate max work parents
+</td>
+</tr>
+<tr>
+<td>
+_olap_aggregate_worklist_max
+</td>
+<td>
+5000
+</td>
+<td>
+OLAP Aggregate max worklists generated at onc
+e
+</td>
+</tr>
+<tr>
+<td>
+_olap_allocate_errorlog_format
+</td>
+<td>
+%8p %8y %8z %e (%n)
+</td>
+<td>
+OLAP Allocate Errorlog Format
+</td>
+</tr>
+<tr>
+<td>
+_olap_allocate_errorlog_header
+</td>
+<td>
+Dim	 Source   Basis
+%
+-8d %-8s %-8b Description
+
+-------- -------- ------
+-- -----------
+</td>
+<td>
+OLAP Allocate Errorlog Header format
+</td>
+</tr>
+<tr>
+<td>
+_olap_continuous_trace_file
+</td>
+<td>
+FALSE
+</td>
+<td>
+Specify TRUE to enable continuous OLAP tracin
+g - otherwise only
+</td>
+</tr>
+<tr>
+<td>
+_olap_dimsave_restore_cache_values
+</td>
+<td>
+TRUE
+</td>
+<td>
+OLAP Dimsave restores cached dimension values
+</td>
+</tr>
+<tr>
+<td>
+_olap_eif_export_lob_size
+</td>
+<td>
+2147483647
+</td>
+<td>
+OLAP EIF Export BLOB size
+</td>
+</tr>
+<tr>
+<td>
+_olap_parallel_update_threshold
+</td>
+<td>
+1000
+</td>
+<td>
+OLAP parallel update threshold in pages
+</td>
+</tr>
+<tr>
+<td>
+_olap_poutlog_echo_to_eventlog
+</td>
+<td>
+FALSE
+</td>
+<td>
+OLAP POutLog copy output to event log (tracef
+ile)
+</td>
+</tr>
+<tr>
+<td>
+_old_connect_by_enabled
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable/disable old connect by
+</td>
+</tr>
+<tr>
+<td>
+_omf
+</td>
+<td>
+enabled
+</td>
+<td>
+enable/disable OMF
+</td>
+</tr>
+<tr>
+<td>
+_oneside_colstat_for_equijoins
+</td>
+<td>
+TRUE
+</td>
+<td>
+sanity check on default selectivity for like/
+range predicate
+</td>
+</tr>
+<tr>
+<td>
+_open_files_limit
+</td>
+<td>
+4294967294
+</td>
+<td>
+Limit on number of files opened by I/O subsys
+tem
+</td>
+</tr>
+<tr>
+<td>
+_optim_adjust_for_part_skews
+</td>
+<td>
+TRUE
+</td>
+<td>
+adjust stats for skews across partitions
+</td>
+</tr>
+<tr>
+<td>
+_optim_enhance_nnull_detection
+</td>
+<td>
+TRUE
+</td>
+<td>
+TRUE to enable index [fast] full scan more of
+ten
+</td>
+</tr>
+<tr>
+<td>
+_optim_new_default_join_sel
+</td>
+<td>
+TRUE
+</td>
+<td>
+improves the way default equijoin selectivity
+ are computed
+</td>
+</tr>
+<tr>
+<td>
+_optim_peek_user_binds
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable peeking of user binds
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_adjust_for_nulls
+</td>
+<td>
+TRUE
+</td>
+<td>
+adjust selectivity for null values
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_choose_permutation
+</td>
+<td>
+0
+</td>
+<td>
+force the optimizer to use the specified perm
+utation
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_cost_model
+</td>
+<td>
+CHOOSE
+</td>
+<td>
+optimizer cost model
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_degree
+</td>
+<td>
+0
+</td>
+<td>
+force the optimizer to use the same degree of
+ parallelism
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_dyn_smp_blks
+</td>
+<td>
+32
+</td>
+<td>
+number of blocks for optimizer dynamic sampli
+ng
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_mode_force
+</td>
+<td>
+TRUE
+</td>
+<td>
+force setting of optimizer mode for user recu
+rsive SQL also
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_new_join_card_computation
+</td>
+<td>
+TRUE
+</td>
+<td>
+compute join cardinality using non-rounded in
+put values
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_percent_parallel
+</td>
+<td>
+101
+</td>
+<td>
+optimizer percent parallel
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_search_limit
+</td>
+<td>
+5
+</td>
+<td>
+optimizer search limit
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_system_stats_usage
+</td>
+<td>
+0
+</td>
+<td>
+system statistics usage
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_undo_changes
+</td>
+<td>
+FALSE
+</td>
+<td>
+undo changes to query optimizer
+</td>
+</tr>
+<tr>
+<td>
+_optimizer_undo_cost_change
+</td>
+<td>
+9.2.0
+</td>
+<td>
+optimizer undo cost change
+</td>
+</tr>
+<tr>
+<td>
+_or_expand_nvl_predicate
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable OR expanded plan for NVL/DECODE predic
+ate
+</td>
+</tr>
+<tr>
+<td>
+_oracle_trace_events
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+Oracle TRACE event flags
+</td>
+</tr>
+<tr>
+<td>
+_oracle_trace_facility_version
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+Oracle TRACE facility version
+</td>
+</tr>
+<tr>
+<td>
+_ordered_nested_loop
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable ordered nested loop costing
+</td>
+</tr>
+<tr>
+<td>
+_ordered_semijoin
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable ordered semi-join subquery
+</td>
+</tr>
+<tr>
+<td>
+_parallel_adaptive_max_users
+</td>
+<td>
+1
+</td>
+<td>
+maximum number of users running with default
+DOP
+</td>
+</tr>
+<tr>
+<td>
+_parallel_broadcast_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable broadcasting of small inputs to hash a
+nd sort merge joins
+</td>
+</tr>
+<tr>
+<td>
+_parallel_default_max_instances
+</td>
+<td>
+1
+</td>
+<td>
+default maximum number of instances for paral
+lel query
+</td>
+</tr>
+<tr>
+<td>
+_parallel_execution_message_align
+</td>
+<td>
+FALSE
+</td>
+<td>
+Alignment of PX buffers to OS page boundary
+</td>
+</tr>
+<tr>
+<td>
+_parallel_fake_class_pct
+</td>
+<td>
+0
+</td>
+<td>
+fake db-scheduler percent used for testing
+</td>
+</tr>
+<tr>
+<td>
+_parallel_load_bal_unit
+</td>
+<td>
+0
+</td>
+<td>
+number of threads to allocate per instance
+</td>
+</tr>
+<tr>
+<td>
+_parallel_load_balancing
+</td>
+<td>
+TRUE
+</td>
+<td>
+parallel execution load balanced slave alloca
+tion
+</td>
+</tr>
+<tr>
+<td>
+_parallel_min_message_pool
+</td>
+<td>
+64440
+</td>
+<td>
+minimum size of shared pool memory to reserve
+ for pq servers
+</td>
+</tr>
+<tr>
+<td>
+_parallel_recovery_stopat
+</td>
+<td>
+32767
+</td>
+<td>
+stop at -position- to step through SMON
+</td>
+</tr>
+<tr>
+<td>
+_parallel_server_idle_time
+</td>
+<td>
+5
+</td>
+<td>
+idle time before parallel query server dies
+</td>
+</tr>
+<tr>
+<td>
+_parallel_server_sleep_time
+</td>
+<td>
+10
+</td>
+<td>
+sleep time between dequeue timeouts (in 1/100
+ths)
+</td>
+</tr>
+<tr>
+<td>
+_parallel_txn_global
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable parallel_txn hint with updates and del
+etes
+</td>
+</tr>
+<tr>
+<td>
+_parallelism_cost_fudge_factor
+</td>
+<td>
+350
+</td>
+<td>
+set the parallelism cost fudge factor
+</td>
+</tr>
+<tr>
+<td>
+_partial_pwise_join_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable partial partition-wise join when TRUE
+</td>
+</tr>
+<tr>
+<td>
+_passwordfile_enqueue_timeout
+</td>
+<td>
+900
+</td>
+<td>
+password file enqueue timeout in seconds
+</td>
+</tr>
+<tr>
+<td>
+_pcm_shadow_locks
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+number of pcm shadow locks to be allocated
+</td>
+</tr>
+<tr>
+<td>
+_pct_refresh_double_count_prevented
+</td>
+<td>
+TRUE
+</td>
+<td>
+materialized view PCT refreshes avoid double
+counting
+</td>
+</tr>
+<tr>
+<td>
+_pdml_gim_sampling
+</td>
+<td>
+5000
+</td>
+<td>
+control separation of global index maintenanc
+e for PDML
+</td>
+</tr>
+<tr>
+<td>
+_pdml_gim_staggered
+</td>
+<td>
+FALSE
+</td>
+<td>
+slaves start on different index when doing in
+dex maint
+</td>
+</tr>
+<tr>
+<td>
+_pdml_slaves_diff_part
+</td>
+<td>
+TRUE
+</td>
+<td>
+slaves start on different partition when doin
+g index maint
+</td>
+</tr>
+<tr>
+<td>
+_pga_max_size
+</td>
+<td>
+209715200
+</td>
+<td>
+Maximum size of the PGA memory for one proces
+s
+</td>
+</tr>
+<tr>
+<td>
+_ping_level
+</td>
+<td>
+4
+</td>
+<td>
+fusion ping level (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_plsql_dump_buffer_events
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+conditions upon which the PL/SQL circular buf
+fer is dumped
+</td>
+</tr>
+<tr>
+<td>
+_pmon_load_constants
+</td>
+<td>
+300,192,64,3,10,10,0
+</td>
+<td>
+server load balancing constants (S,P,D,I,L,C,
+M)
+</td>
+</tr>
+<tr>
+<td>
+_pre_rewrite_push_pred
+</td>
+<td>
+TRUE
+</td>
+<td>
+push predicates into views before rewrite
+</td>
+</tr>
+<tr>
+<td>
+_precompute_gid_values
+</td>
+<td>
+TRUE
+</td>
+<td>
+precompute gid values and copy them before re
+turning a row
+</td>
+</tr>
+<tr>
+<td>
+_pred_move_around
+</td>
+<td>
+TRUE
+</td>
+<td>
+enables predicate move-around
+</td>
+</tr>
+<tr>
+<td>
+_predicate_elimination_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+allow predicate elimination if set to TRUE
+</td>
+</tr>
+<tr>
+<td>
+_project_view_columns
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable projecting out unreferenced columns of
+ a view
+</td>
+</tr>
+<tr>
+<td>
+_push_join_predicate
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable pushing join predicate inside a view
+</td>
+</tr>
+<tr>
+<td>
+_push_join_union_view
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable pushing join predicate inside a union
+view
+</td>
+</tr>
+<tr>
+<td>
+_px_async_getgranule
+</td>
+<td>
+FALSE
+</td>
+<td>
+asynchronous get granule in the slave
+</td>
+</tr>
+<tr>
+<td>
+_px_broadcast_fudge_factor
+</td>
+<td>
+100
+</td>
+<td>
+set the tq broadcasting fudge factor percenta
+ge
+</td>
+</tr>
+<tr>
+<td>
+_px_dynamic_opt
+</td>
+<td>
+TRUE
+</td>
+<td>
+turn off/on restartable qerpx dynamic optimiz
+ation
+</td>
+</tr>
+<tr>
+<td>
+_px_dynamic_sample_size
+</td>
+<td>
+50
+</td>
+<td>
+num of samples for restartable qerpx dynamic
+optimization
+</td>
+</tr>
+<tr>
+<td>
+_px_granule_size
+</td>
+<td>
+100000
+</td>
+<td>
+default size of a rowid range granule (in KB)
+</td>
+</tr>
+<tr>
+<td>
+_px_index_sampling
+</td>
+<td>
+200
+</td>
+<td>
+parallel query sampling for index create (100
+000 = 100%)
+</td>
+</tr>
+<tr>
+<td>
+_px_kxib_tracing
+</td>
+<td>
+0
+</td>
+<td>
+turn on kxib tracing
+</td>
+</tr>
+<tr>
+<td>
+_px_load_publish_interval
+</td>
+<td>
+200
+</td>
+<td>
+interval at which LMON will check whether to
+publish PX load
+</td>
+</tr>
+<tr>
+<td>
+_px_max_granules_per_slave
+</td>
+<td>
+100
+</td>
+<td>
+maximum number of rowid range granules to gen
+erate per slave
+</td>
+</tr>
+<tr>
+<td>
+_px_min_granules_per_slave
+</td>
+<td>
+13
+</td>
+<td>
+minimum number of rowid range granules to gen
+erate per slave
+</td>
+</tr>
+<tr>
+<td>
+_px_no_stealing
+</td>
+<td>
+FALSE
+</td>
+<td>
+prevent parallel granule stealing in shared n
+othing environment
+</td>
+</tr>
+<tr>
+<td>
+_px_trace
+</td>
+<td>
+none
+</td>
+<td>
+px trace parameter
+</td>
+</tr>
+<tr>
+<td>
+_query_cost_rewrite
+</td>
+<td>
+TRUE
+</td>
+<td>
+perform the cost based rewrite with materiali
+zed views
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_1
+</td>
+<td>
+TRUE
+</td>
+<td>
+perform query rewrite before&amp;after or only be
+fore view merging
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_2
+</td>
+<td>
+TRUE
+</td>
+<td>
+perform query rewrite before&amp;after or only af
+ter view merging
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_drj
+</td>
+<td>
+TRUE
+</td>
+<td>
+mv rewrite and drop redundant joins
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_expression
+</td>
+<td>
+TRUE
+</td>
+<td>
+rewrite with cannonical form for expressions
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_fpc
+</td>
+<td>
+TRUE
+</td>
+<td>
+mv rewrite fresh partition containment
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_fudge
+</td>
+<td>
+90
+</td>
+<td>
+cost based query rewrite with MVs fudge facto
+r
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_jgmigrate
+</td>
+<td>
+TRUE
+</td>
+<td>
+mv rewrite with jg migration
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_maxdisjunct
+</td>
+<td>
+257
+</td>
+<td>
+query rewrite max disjuncts
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_or_error
+</td>
+<td>
+FALSE
+</td>
+<td>
+allow query rewrite, if referenced tables are
+ not dataless
+</td>
+</tr>
+<tr>
+<td>
+_query_rewrite_vop_cleanup
+</td>
+<td>
+TRUE
+</td>
+<td>
+prune frocol chain before rewrite after view-
+merging
+</td>
+</tr>
+<tr>
+<td>
+_realfree_heap_free_threshold
+</td>
+<td>
+4194303
+</td>
+<td>
+threshold for performing real-free, in Kbytes
+</td>
+</tr>
+<tr>
+<td>
+_realfree_heap_max_size
+</td>
+<td>
+32768
+</td>
+<td>
+minimum max total heap size, in Kbytes
+</td>
+</tr>
+<tr>
+<td>
+_realfree_heap_mode
+</td>
+<td>
+0
+</td>
+<td>
+mode flags for real-free heap
+</td>
+</tr>
+<tr>
+<td>
+_recovery_asserts
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, enable expensive recovery sanity che
+cks (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_recovery_claim_batch_size
+</td>
+<td>
+10
+</td>
+<td>
+number of messages to batch in a recovery cla
+im message (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_recovery_percentage
+</td>
+<td>
+50
+</td>
+<td>
+recovery buffer cache percentage
+</td>
+</tr>
+<tr>
+<td>
+_release_insert_threshold
+</td>
+<td>
+5
+</td>
+<td>
+maximum number of unusable blocks to unlink f
+rom freelist
+</td>
+</tr>
+<tr>
+<td>
+_reliable_block_sends
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, block sends across interconnect are
+reliable
+</td>
+</tr>
+<tr>
+<td>
+_reuse_index_loop
+</td>
+<td>
+5
+</td>
+<td>
+number of blocks being examine for index bloc
+k reuse
+</td>
+</tr>
+<tr>
+<td>
+_rollback_segment_count
+</td>
+<td>
+0
+</td>
+<td>
+number of undo segments
+</td>
+</tr>
+<tr>
+<td>
+_rollback_segment_initial
+</td>
+<td>
+1
+</td>
+<td>
+starting undo segment number
+</td>
+</tr>
+<tr>
+<td>
+_row_cache_cursors
+</td>
+<td>
+10
+</td>
+<td>
+number of cached cursors for row cache manage
+ment
+</td>
+</tr>
+<tr>
+<td>
+_row_cr
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable row cr for all sql
+</td>
+</tr>
+<tr>
+<td>
+_rowsource_execution_statistics
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, Oracle will collect rowsource level
+statistics
+</td>
+</tr>
+<tr>
+<td>
+_scn_scheme
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+SCN scheme
+</td>
+</tr>
+<tr>
+<td>
+_second_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+second spare parameter - integer
+</td>
+</tr>
+<tr>
+<td>
+_send_ast_to_foreground
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, send ast message to foreground
+</td>
+</tr>
+<tr>
+<td>
+_send_close_with_block
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, send close with block even with dire
+ct sends
+</td>
+</tr>
+<tr>
+<td>
+_send_requests_to_PI
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, try to send CR requests to PI buffer
+s (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_serial_direct_read
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable direct read in serial
+</td>
+</tr>
+<tr>
+<td>
+_session_idle_bit_latches
+</td>
+<td>
+0
+</td>
+<td>
+one latch per session or a latch per group of
+ sessions
+</td>
+</tr>
+<tr>
+<td>
+_seventh_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+seventh spare parameter - string list
+</td>
+</tr>
+<tr>
+<td>
+_shared_pool_reserved_min_alloc
+</td>
+<td>
+4400
+</td>
+<td>
+minimum allocation size in bytes for reserved
+ area of shared poo
+</td>
+</tr>
+<tr>
+<td>
+_shared_pool_reserved_pct
+</td>
+<td>
+5
+</td>
+<td>
+percentage memory of the shared pool allocate
+d for the reserved
+</td>
+</tr>
+<tr>
+<td>
+_shrunk_aggs_disable_threshold
+</td>
+<td>
+60
+</td>
+<td>
+percentage of exceptions at which to switch t
+o full length aggs
+</td>
+</tr>
+<tr>
+<td>
+_shrunk_aggs_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable use of variable sized buffers for non-
+distinct aggregates
+</td>
+</tr>
+<tr>
+<td>
+_side_channel_batch_size
+</td>
+<td>
+100
+</td>
+<td>
+number of messages to batch in a side channel
+ message (DFS)
+</td>
+</tr>
+<tr>
+<td>
+_side_channel_batch_timeout
+</td>
+<td>
+5
+</td>
+<td>
+timeout before shipping out all the batched s
+ide channel message
+</td>
+</tr>
+<tr>
+<td>
+_single_process
+</td>
+<td>
+FALSE
+</td>
+<td>
+run without detached processes
+</td>
+</tr>
+<tr>
+<td>
+_sixth_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+sixth spare parameter - string list
+</td>
+</tr>
+<tr>
+<td>
+_skip_assume_msg
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, skip assume message for consigns at
+the master
+</td>
+</tr>
+<tr>
+<td>
+_slave_mapping_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable slave mapping when TRUE
+</td>
+</tr>
+<tr>
+<td>
+_slave_mapping_group_size
+</td>
+<td>
+0
+</td>
+<td>
+force the number of slave group in a slave ma
+pper
+</td>
+</tr>
+<tr>
+<td>
+_small_table_threshold
+</td>
+<td>
+60
+</td>
+<td>
+threshold level of table size for direct read
+s
+</td>
+</tr>
+<tr>
+<td>
+_smm_advice_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, enable v$pga_advice
+</td>
+</tr>
+<tr>
+<td>
+_smm_advice_log_size
+</td>
+<td>
+0
+</td>
+<td>
+overwrites default size of the PGA advice wor
+karea history log
+</td>
+</tr>
+<tr>
+<td>
+_smm_auto_cost_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+if TRUE, use the AUTO size policy cost functi
+ons
+</td>
+</tr>
+<tr>
+<td>
+_smm_auto_max_io_size
+</td>
+<td>
+248
+</td>
+<td>
+Maximum IO size (in KB) used by sort/hash-joi
+n in auto mode
+</td>
+</tr>
+<tr>
+<td>
+_smm_auto_min_io_size
+</td>
+<td>
+56
+</td>
+<td>
+Minimum IO size (in KB) used by sort/hash-joi
+n in auto mode
+</td>
+</tr>
+<tr>
+<td>
+_smm_bound
+</td>
+<td>
+0
+</td>
+<td>
+overwrites memory manager automatically compu
+ted bound
+</td>
+</tr>
+<tr>
+<td>
+_smm_control
+</td>
+<td>
+0
+</td>
+<td>
+provides controls on the memory manager
+</td>
+</tr>
+<tr>
+<td>
+_smm_max_size
+</td>
+<td>
+102400
+</td>
+<td>
+maximum work area size in auto mode (serial)
+</td>
+</tr>
+<tr>
+<td>
+_smm_min_size
+</td>
+<td>
+1024
+</td>
+<td>
+minimum work area size in auto mode
+</td>
+</tr>
+<tr>
+<td>
+_smm_px_max_size
+</td>
+<td>
+10066329
+</td>
+<td>
+maximum work area size in auto mode (global)
+</td>
+</tr>
+<tr>
+<td>
+_smm_trace
+</td>
+<td>
+0
+</td>
+<td>
+Turn on/off tracing for SQL memory manager
+</td>
+</tr>
+<tr>
+<td>
+_smon_consume_post
+</td>
+<td>
+FALSE
+</td>
+<td>
+consume any extra posts after completion of t
+ransaction recovery
+</td>
+</tr>
+<tr>
+<td>
+_smon_internal_errlimit
+</td>
+<td>
+100
+</td>
+<td>
+limit of SMON internal errors
+</td>
+</tr>
+<tr>
+<td>
+_smu_debug_mode
+</td>
+<td>
+0
+</td>
+<td>
+&lt;debug-flag&gt; - set debug event for testing SM
+U operations
+</td>
+</tr>
+<tr>
+<td>
+_smu_error_simulation_site
+</td>
+<td>
+0
+</td>
+<td>
+site ID of error simulation in KTU code
+</td>
+</tr>
+<tr>
+<td>
+_smu_error_simulation_type
+</td>
+<td>
+0
+</td>
+<td>
+error type for error simulation in KTU code
+</td>
+</tr>
+<tr>
+<td>
+_sort_elimination_cost_ratio
+</td>
+<td>
+0
+</td>
+<td>
+cost ratio for sort eimination under first_ro
+ws mode
+</td>
+</tr>
+<tr>
+<td>
+_sort_multiblock_read_count
+</td>
+<td>
+2
+</td>
+<td>
+multi-block read count for sort
+</td>
+</tr>
+<tr>
+<td>
+_sort_space_for_write_buffers
+</td>
+<td>
+1
+</td>
+<td>
+tenths of sort_area_size devoted to direct wr
+ite buffers
+</td>
+</tr>
+<tr>
+<td>
+_sortmerge_inequality_join_off
+</td>
+<td>
+FALSE
+</td>
+<td>
+turns off sort-merge join on inequality
+</td>
+</tr>
+<tr>
+<td>
+_spin_count
+</td>
+<td>
+2000
+</td>
+<td>
+Amount to spin waiting for a latch
+</td>
+</tr>
+<tr>
+<td>
+_sql_connect_capability_override
+</td>
+<td>
+0
+</td>
+<td>
+SQL Connect Capability Table Override
+</td>
+</tr>
+<tr>
+<td>
+_sql_connect_capability_table
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+SQL Connect Capability Table (testing only)
+</td>
+</tr>
+<tr>
+<td>
+_sqlexec_progression_cost
+</td>
+<td>
+1000
+</td>
+<td>
+sql execution progression monitoring cost thr
+eshold
+</td>
+</tr>
+<tr>
+<td>
+_subquery_pruning_cost_factor
+</td>
+<td>
+20
+</td>
+<td>
+subquery pruning cost factor
+</td>
+</tr>
+<tr>
+<td>
+_subquery_pruning_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable the use of subquery predicates to perf
+orm pruning
+</td>
+</tr>
+<tr>
+<td>
+_subquery_pruning_mv_enabled
+</td>
+<td>
+FALSE
+</td>
+<td>
+enable the use of subquery predicates with MV
+s to perform prunin
+</td>
+</tr>
+<tr>
+<td>
+_subquery_pruning_reduction
+</td>
+<td>
+50
+</td>
+<td>
+subquery pruning reduction factor
+</td>
+</tr>
+<tr>
+<td>
+_system_index_caching
+</td>
+<td>
+0
+</td>
+<td>
+optimizer percent system index caching
+</td>
+</tr>
+<tr>
+<td>
+_system_trig_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+are system triggers enabled
+</td>
+</tr>
+<tr>
+<td>
+_table_lookup_prefetch_size
+</td>
+<td>
+40
+</td>
+<td>
+table lookup prefetch vector size
+</td>
+</tr>
+<tr>
+<td>
+_table_lookup_prefetch_thresh
+</td>
+<td>
+2
+</td>
+<td>
+table lookup prefetch threshold
+</td>
+</tr>
+<tr>
+<td>
+_table_scan_cost_plus_one
+</td>
+<td>
+TRUE
+</td>
+<td>
+bump estimated full table scan and index ffs
+cost by one
+</td>
+</tr>
+<tr>
+<td>
+_temp_tran_block_threshold
+</td>
+<td>
+100
+</td>
+<td>
+number of blocks for a dimension before we te
+mp transform
+</td>
+</tr>
+<tr>
+<td>
+_temp_tran_cache
+</td>
+<td>
+TRUE
+</td>
+<td>
+determines if temp table is created with cach
+e option
+</td>
+</tr>
+<tr>
+<td>
+_test_ksusigskip
+</td>
+<td>
+5
+</td>
+<td>
+test the function ksusigskip
+</td>
+</tr>
+<tr>
+<td>
+_test_param_1
+</td>
+<td>
+25
+</td>
+<td>
+test parmeter 1 - integer
+</td>
+</tr>
+<tr>
+<td>
+_test_param_2
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+test parameter 2 - string
+</td>
+</tr>
+<tr>
+<td>
+_test_param_3
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+test parameter 3 - string
+</td>
+</tr>
+<tr>
+<td>
+_test_param_4
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+test parameter 4 - string list
+</td>
+</tr>
+<tr>
+<td>
+_test_param_5
+</td>
+<td>
+25
+</td>
+<td>
+test parmeter 5 - deprecated integer
+</td>
+</tr>
+<tr>
+<td>
+_test_param_6
+</td>
+<td>
+0
+</td>
+<td>
+test parmeter 6 - size (ub8)
+</td>
+</tr>
+<tr>
+<td>
+_third_spare_parameter
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+third spare parameter - integer
+</td>
+</tr>
+<tr>
+<td>
+_tq_dump_period
+</td>
+<td>
+0
+</td>
+<td>
+time period for duping of TQ statistics (s)
+</td>
+</tr>
+<tr>
+<td>
+_trace_archive
+</td>
+<td>
+FALSE
+</td>
+<td>
+start DIAG process
+</td>
+</tr>
+<tr>
+<td>
+_trace_buffer_flushes
+</td>
+<td>
+FALSE
+</td>
+<td>
+trace buffer flushes if otrace cacheIO event
+is set
+</td>
+</tr>
+<tr>
+<td>
+_trace_buffer_gets
+</td>
+<td>
+FALSE
+</td>
+<td>
+trace kcb buffer gets if otrace cacheIO event
+ is set
+</td>
+</tr>
+<tr>
+<td>
+_trace_buffers
+</td>
+<td>
+ALL:256
+</td>
+<td>
+trace buffer sizes per process
+</td>
+</tr>
+<tr>
+<td>
+_trace_cr_buffer_creates
+</td>
+<td>
+FALSE
+</td>
+<td>
+trace cr buffer creates if otrace cacheIO eve
+nt is set
+</td>
+</tr>
+<tr>
+<td>
+_trace_events
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+trace events enabled at startup
+</td>
+</tr>
+<tr>
+<td>
+_trace_file_size
+</td>
+<td>
+65536
+</td>
+<td>
+maximum size of trace file (in number of trac
+e records)
+</td>
+</tr>
+<tr>
+<td>
+_trace_files_public
+</td>
+<td>
+FALSE
+</td>
+<td>
+Create publicly accessible trace files
+</td>
+</tr>
+<tr>
+<td>
+_trace_flush_processes
+</td>
+<td>
+ALL
+</td>
+<td>
+trace data archived by DIAG for these process
+es
+</td>
+</tr>
+<tr>
+<td>
+_trace_multi_block_reads
+</td>
+<td>
+FALSE
+</td>
+<td>
+trace multi_block reads if otrace cacheIO eve
+nt is set
+</td>
+</tr>
+<tr>
+<td>
+_trace_options
+</td>
+<td>
+text,multiple
+</td>
+<td>
+trace data flush options
+</td>
+</tr>
+<tr>
+<td>
+_trace_pin_time
+</td>
+<td>
+0
+</td>
+<td>
+trace how long a current pin is held
+</td>
+</tr>
+<tr>
+<td>
+_trace_processes
+</td>
+<td>
+ALL
+</td>
+<td>
+enable KST tracing in process
+</td>
+</tr>
+<tr>
+<td>
+_transaction_recovery_servers
+</td>
+<td>
+0
+</td>
+<td>
+max number of parallel recovery slaves that m
+ay be used
+</td>
+</tr>
+<tr>
+<td>
+_tts_allow_nchar_mismatch
+</td>
+<td>
+FALSE
+</td>
+<td>
+allow plugging in a tablespace with a differe
+nt national charact
+</td>
+</tr>
+<tr>
+<td>
+_two_pass
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable two-pass thread recovery
+</td>
+</tr>
+<tr>
+<td>
+_two_pass_reverse_polish_enabled
+</td>
+<td>
+TRUE
+</td>
+<td>
+uses two-pass reverse polish alg. to generate
+ canonical forms
+</td>
+</tr>
+<tr>
+<td>
+_union_rewrite_for_gs
+</td>
+<td>
+CHOOSE
+</td>
+<td>
+expand queries with GSets into UNIONs for rew
+rite
+</td>
+</tr>
+<tr>
+<td>
+_unnest_notexists_sq
+</td>
+<td>
+SINGLE
+</td>
+<td>
+unnest NOT EXISTS subquery with one or more t
+ables if possible
+</td>
+</tr>
+<tr>
+<td>
+_unnest_subquery
+</td>
+<td>
+TRUE
+</td>
+<td>
+enables unnesting of correlated subqueries
+</td>
+</tr>
+<tr>
+<td>
+_use_column_stats_for_function
+</td>
+<td>
+TRUE
+</td>
+<td>
+enable the use of column statistics for DDP f
+unctions
+</td>
+</tr>
+<tr>
+<td>
+_use_ism
+</td>
+<td>
+TRUE
+</td>
+<td>
+Enable Shared Page Tables - ISM
+</td>
+</tr>
+<tr>
+<td>
+_use_new_explain_plan
+</td>
+<td>
+FALSE
+</td>
+<td>
+if TRUE, use the AUTO size policy cost functi
+ons
+</td>
+</tr>
+<tr>
+<td>
+_use_nosegment_indexes
+</td>
+<td>
+FALSE
+</td>
+<td>
+use nosegment indexes in explain plan
+</td>
+</tr>
+<tr>
+<td>
+_use_realfree_heap
+</td>
+<td>
+TRUE
+</td>
+<td>
+use real-free based allocator for PGA memory
+</td>
+</tr>
+<tr>
+<td>
+_use_seq_process_cache
+</td>
+<td>
+TRUE
+</td>
+<td>
+whether to use process local seq cache
+</td>
+</tr>
+<tr>
+<td>
+_use_vector_post
+</td>
+<td>
+TRUE
+</td>
+<td>
+use vector post
+</td>
+</tr>
+<tr>
+<td>
+_verify_undo_quota
+</td>
+<td>
+FALSE
+</td>
+<td>
+TRUE - verify consistency of undo quota stati
+stics
+</td>
+</tr>
+<tr>
+<td>
+_wait_for_sync
+</td>
+<td>
+TRUE
+</td>
+<td>
+wait for sync on commit MUST BE ALWAYS TRUE
+</td>
+</tr>
+<tr>
+<td>
+_walk_insert_threshold
+</td>
+<td>
+0
+</td>
+<td>
+maximum number of unusable blocks to walk acr
+oss freelist
+</td>
+</tr>
+<tr>
+<td>
+_watchpoint_on
+</td>
+<td>
+FALSE
+</td>
+<td>
+is the watchpointing feature turned on?
+</td>
+</tr>
+<tr>
+<td>
+_write_clones
+</td>
+<td>
+3
+</td>
+<td>
+write clones flag
+</td>
+</tr>
+<tr>
+<td>
+_yield_check_interval
+</td>
+<td>
+100000
+</td>
+<td>
+interval to check whether actses should yield
+</td>
+</tr>
+</table>
+<p>
+
+540 rows selected.<br>
+<br>
+
+

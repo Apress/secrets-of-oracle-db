@@ -1,0 +1,67 @@
+
+*** TRACE DUMP CONTINUED FROM FILE  ***
+
+
+Dump file c:\programme\oracle\product\admin\ten\udump\ten_ora_6720_insert_customer.pl.trc
+Tue Nov 20 15:39:38 2007
+ORACLE V10.2.0.1.0 - Production vsnsta=0
+vsnsql=14 vsnxtr=3
+Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, Oracle Label Security, OLAP and Data Mining options
+Windows XP Version V5.1 Service Pack 2
+CPU                 : 2 - type 586
+Process Affinity    : 0x00000000
+Memory (Avail/Total): Ph:509M/2046M, Ph+PgF:2117M/3938M, VA:1625M/2047M
+Instance name: ten
+
+Redo thread mounted by this instance: 1
+
+Oracle process number: 20
+
+Windows thread id: 6720, image: ORACLE.EXE (SHAD)
+
+
+*** ACTION NAME:() 2007-11-20 15:39:38.546
+*** MODULE NAME:(insert_customer.pl) 2007-11-20 15:39:38.546
+*** SERVICE NAME:(TEN.oradbpro.com) 2007-11-20 15:39:38.546
+*** SESSION ID:(44.524) 2007-11-20 15:39:38.546
+=====================
+PARSING IN CURSOR #2 len=68 dep=0 uid=61 oct=42 lid=61 tim=789991633616 hv=740818757 ad='6be3972c'
+alter session set events '10046 trace name context forever, level 8'
+END OF STMT
+EXEC #2:c=0,e=98,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,tim=789991633607
+WAIT #2: nam='SQL*Net message to client' ela= 5 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=789991638001
+WAIT #2: nam='SQL*Net message from client' ela= 569 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=789991638751
+=====================
+PARSING IN CURSOR #1 len=87 dep=0 uid=61 oct=2 lid=61 tim=789991639097 hv=2228079888 ad='6cad992c'
+INSERT INTO customer(name, phone) VALUES (:name, :phone) 
+        RETURNING id INTO :id
+END OF STMT
+PARSE #1:c=0,e=84,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,tim=789991639091
+=====================
+PARSING IN CURSOR #2 len=40 dep=1 uid=61 oct=3 lid=61 tim=789991640250 hv=1168215557 ad='6cbaf25c'
+SELECT CUSTOMER_ID_SEQ.NEXTVAL FROM DUAL
+END OF STMT
+PARSE #2:c=0,e=72,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=1,tim=789991640243
+EXEC #2:c=0,e=62,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=1,tim=789991641167
+=====================
+PARSING IN CURSOR #3 len=129 dep=2 uid=0 oct=6 lid=0 tim=789991641501 hv=2635489469 ad='6bdb9be8'
+update seq$ set increment$=:2,minvalue=:3,maxvalue=:4,cycle#=:5,order$=:6,cache=:7,highwater=:8,audit$=:9,flags=:10 where obj#=:1
+END OF STMT
+PARSE #3:c=0,e=68,p=0,cr=0,cu=0,mis=0,r=0,dep=2,og=4,tim=789991641494
+EXEC #3:c=0,e=241,p=0,cr=1,cu=2,mis=0,r=1,dep=2,og=4,tim=789991642567
+STAT #3 id=1 cnt=1 pid=0 pos=1 obj=0 op='UPDATE  SEQ$ (cr=1 pr=0 pw=0 time=195 us)'
+STAT #3 id=2 cnt=1 pid=1 pos=1 obj=102 op='INDEX UNIQUE SCAN I_SEQ1 (cr=1 pr=0 pw=0 time=25 us)'
+FETCH #2:c=0,e=1872,p=0,cr=1,cu=3,mis=0,r=1,dep=1,og=1,tim=789991643213
+WAIT #1: nam='db file sequential read' ela= 33297 file#=4 block#=127140 blocks=1 obj#=54441 tim=789993165434
+WAIT #1: nam='SQL*Net message to client' ela= 5 driver id=1413697536 #bytes=1 p3=0 obj#=54441 tim=789993165747
+EXEC #1:c=1500000,e=1525863,p=1,cr=2,cu=8,mis=0,r=1,dep=0,og=1,tim=789993165858
+WAIT #1: nam='SQL*Net message from client' ela= 232 driver id=1413697536 #bytes=1 p3=0 obj#=54441 tim=789993166272
+XCTEND rlbk=0, rd_only=0
+WAIT #0: nam='log file sync' ela= 168 buffer#=5320 p2=0 p3=0 obj#=54441 tim=789993166718
+WAIT #0: nam='SQL*Net message to client' ela= 2 driver id=1413697536 #bytes=1 p3=0 obj#=54441 tim=789993166829
+*** 2007-11-20 15:39:49.937
+WAIT #0: nam='SQL*Net message from client' ela= 9864075 driver id=1413697536 #bytes=1 p3=0 obj#=54441 tim=790003031019
+XCTEND rlbk=0, rd_only=1
+STAT #2 id=1 cnt=1 pid=0 pos=1 obj=53073 op='SEQUENCE  CUSTOMER_ID_SEQ (cr=1 pr=0 pw=0 time=1878 us)'
+STAT #2 id=2 cnt=1 pid=1 pos=1 obj=0 op='FAST DUAL  (cr=0 pr=0 pw=0 time=15 us)'
